@@ -9,6 +9,13 @@ import useSiteSettings from '../hooks/useSiteSettings';
 import SearchForm from '../components/search-form';
 import CookieConsent from '../components/cookie-consent';
 
+const client = createClient({
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.IS_PREVIEW === "true" ? 
+    process.env.CONTENTFUL_PREVIEW_TOKEN : 
+    process.env.CONTENTFUL_DELIVERY_TOKEN
+})
+
 const UpperContainer = styled.div`
   margin-bottom: 24px;
 `;
