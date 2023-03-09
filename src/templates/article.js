@@ -134,7 +134,7 @@ export default function Article(props) {
         </WhiteContainer>
       </article>
     </Layout>
-    <script>console.log({props.data.article.body.json})</script>
+    {props.data.article.body.json}
   );
 }
 
