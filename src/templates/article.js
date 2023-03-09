@@ -124,7 +124,7 @@ export default function Article(props) {
 
       <article>
         <ArticleTitle>{props.data.article.title}</ArticleTitle>
-
+        <script>console.log({props.data.article.body.json})</script>
         <WhiteContainer>
           <ArticleContentContainer>
             {documentToReactComponents(
@@ -134,7 +134,6 @@ export default function Article(props) {
           </ArticleContentContainer>
         </WhiteContainer>
       </article>
-    <script>console.log(props.data.article.body.json)</script>
     </Layout>
   );
 }
