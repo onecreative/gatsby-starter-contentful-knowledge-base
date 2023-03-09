@@ -134,7 +134,6 @@ export default function Article(props) {
         </WhiteContainer>
       </article>
     </Layout>
-    <script>console.log({props})</script>
   );
 }
 
